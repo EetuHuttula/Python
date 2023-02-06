@@ -6,6 +6,7 @@ player = False
 
 while player == False:
 
+    #player selects language
     print("1. Finnish/Suomi")
     print("2. English/Englanti")
     language = input("select your prefered language : ")
@@ -17,7 +18,8 @@ while player == False:
     
 
     #English version see RPSEN file.
-    else:
+    if language == ("2"):
        eng.english()
-
+    else:
+        print("select one of the following languages.")
     player = False

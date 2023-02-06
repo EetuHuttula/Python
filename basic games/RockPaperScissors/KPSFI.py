@@ -7,16 +7,21 @@ def finnish():
     #Finnish version
     finnish = ["Kivi", "Paperi", "Sakset"]
     
-
+    #name variable will be empty by default. 
     name = ""
 
+    #player inputs username to make this game a bit more friendly
     if name == "":
         name += input("Pelaajan nimi : ")
         print("jatketaan", name)
 
+        #computer selects it's own item
         computer = finnish[randint(0,2)] 
 
-    player = input("Kivi, Paperi, Sakset? ")    
+    #player is asked to choose one of the items
+    player = input("Kivi, Paperi, Sakset? ")
+
+    #winning conditions 
     if player == computer: 
         print("Tasapeli!")
 
